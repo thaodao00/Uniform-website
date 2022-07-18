@@ -9,7 +9,15 @@ import {AboutComponent} from './web/components/pages/about/about.component';
 import {ContactComponent} from './web/components/pages/contact/contact.component';
 import {ProductDetailComponent} from './web/components/pages/product-detail/product-detail.component';
 import {HttpClientModule} from "@angular/common/http";
-import { NotFoundComponent } from './web/components/pages/not-found/not-found.component';
+import {NotFoundComponent} from './web/components/pages/not-found/not-found.component';
+import {CarouselModule} from "ngx-owl-carousel-o";
+import {AvatarModule} from 'primeng/avatar';
+import {AvatarGroupModule} from 'primeng/avatargroup';
+import {BannerComponent} from './web/components/components/banner/banner.component';
+import {ProductComponent} from "./web/components/components/product/product.component";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {RouterModule} from "@angular/router";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
     declarations: [
@@ -19,12 +27,20 @@ import { NotFoundComponent } from './web/components/pages/not-found/not-found.co
         AboutComponent,
         ContactComponent,
         ProductDetailComponent,
-        NotFoundComponent
+        NotFoundComponent,
+        BannerComponent,
+        ProductComponent,
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
+        RouterModule,
         HttpClientModule,
+        CarouselModule,
+        AvatarModule,
+        AvatarGroupModule,
+        BrowserAnimationsModule,
+        ReactiveFormsModule,
     ],
     providers: [],
     bootstrap: [AppComponent]
