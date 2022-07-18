@@ -1,3 +1,179 @@
 
+<header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark navbar-home">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="padding-right: 16px" routerLink="/">
+                <img class="navbar__logo" src="./assets/logo/Logo.png"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/product">PRODUCT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/product">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/product">CONTACT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar__avatar-text" routerLink="/">USER</a>
+                    </li>
+                </ul>
+                <div class="navbar__right">
+                    <form class="d-flex">
+                        <input class="form-control me-2 input--transparent" type="text" placeholder="Search"
+                               style="padding: .175rem .75rem">
+                        <!--          <button class="btn btn-outline-success" type="button">Search</button>-->
+                    </form>
+                    <a class="nav-link" routerLink="/">
+                        <div class="navbar__avatar-img">
+                            <p-avatar image="./assets/avatar/default-avatar.png" size="medium"
+                                      shape="circle"></p-avatar>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
 
 <router-outlet></router-outlet>
+
+<footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="fab fa-google"></i>
+            </a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                <i class="fab fa-github"></i>
+            </a>
+        </section>
+
+        <!-- Section: Form -->
+        <section class="">
+            <form action="">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-auto">
+                        <p class="pt-2">
+                            <strong>Sign up for our newsletter</strong>
+                        </p>
+                    </div>
+                    <div class="col-md-5 col-12">
+                        <div class="form-outline form-white mb-4">
+                            <input type="email" class="form-control input--transparent" placeholder="Email address"/>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-outline-light mb-4">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <!-- Section: Text -->
+        <section class="mb-4">
+            <p>
+                Uniforms are an integral part of our lives. It makes the line between rich and poor more blurred.
+                Uniforms make
+                people more dignified. However, it does not mean that only when we need to be dignified do we need to
+                wear a
+                uniform, we can wear it whenever we need to go out. Therefore, our store is committed to always bringing
+                customers the best quality products, soft, non-irritating and absorbent clothes at affordable prices.
+            </p>
+        </section>
+
+        <!-- Section: Links -->
+        <section class="">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Where To Buy</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-white">See Authorized Retailers</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Rewards</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-white">Join Now</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Learn More</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Manage Account</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">News & Info</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-white">Press Releases</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Product Support</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Product Manuals</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Product Registration</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Newsletter Sign Up</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Accessibility and Usability</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Contact</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-white">Phone: 088 8888888</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-white">Email: uniformshop@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+</footer>

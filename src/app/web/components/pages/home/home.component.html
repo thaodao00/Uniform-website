@@ -1,1 +1,9 @@
-<p>home works!</p>
+<app-banner></app-banner>
+<div class="container">
+    <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide *ngFor="let product of products; let i = index">
+            <app-product [product]="product"></app-product>
+        </ng-template>
+    </owl-carousel-o>
+</div>
+
