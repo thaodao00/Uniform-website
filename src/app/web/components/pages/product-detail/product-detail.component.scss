@@ -1,4 +1,24 @@
-.btn-count{
+.product-content__img-wrapper {
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out 0s;
+  position: relative;
+  /* margin: 0 0 0 50px; */
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.product-slider__background {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 1px 0;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  //background-image: url(https://webdongphuc.vn/wp-content/uploads/2021/05/BANNER-MI%E1%BB%84N-PH%C3%8D-FINAL.png);
+}
+.btn-count {
   width: 52px;
   height: 52px;
   font-size: 18px;
@@ -9,17 +29,20 @@
   border: 1px solid #d8d8d8;
   margin: 0 -1px 0;
 }
-.btn-add{
+
+.btn-add {
   background: black;
   margin: 0 10px;
   height: 52px;
   border-radius: 0;
 }
+
 .product-content__meta {
   display: block;
   width: 100%;
   margin-top: 37px;
 }
+
 .meta__sku-wrapper, .meta__category-wrapper, .meta__tag-wrapper {
   display: block;
   margin: 1px 0;
@@ -29,6 +52,7 @@
   text-transform: uppercase;
   color: black;
 }
+
 .meta__sku, .meta__category, .meta__tag {
   font-size: 12px;
   line-height: 24px;
@@ -36,3 +60,220 @@
   text-transform: uppercase;
   color: black;
 }
+.product-content__tabs-list {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  //justify-content: flex-start;
+  list-style: none;
+  text-align: center;
+  margin-top: 30px;
+  padding: 0;
+
+  .product-content__tabs-item {
+    padding: 20px;
+    //margin-right: 10px;
+    font-size: 16px;
+    font-weight: 200;
+    //color: ;
+    font-style: italic;
+    /* font-family: Cormorant, sans-serif; */
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+  }
+
+  .tabs-active {
+    display: flex !important;
+  }
+
+  .product-content__tabs-item.tabs-active {
+    border: 1px solid gray;
+  }
+
+}
+
+.product-content__tabs-content {
+  margin: 30px 0;
+
+  .tabs-content__item {
+    display: none;
+  }
+
+  .tabs-content__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    color: var(--grey-color);
+    width: 90%;
+  }
+
+  .tabs-active {
+    display: flex !important;
+  }
+
+  .tabs-active {
+    display: flex !important;
+  }
+}
+
+.related-products__title {
+  font-size: 24px;
+  color: var(--text-color);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.product-content__text-wrapper {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+
+  .product-content__text {
+    display: block;
+
+    .product-content__text__title {
+      display: block;
+      margin: 0 0 7px;
+      font-weight: 400;
+      word-wrap: break-word;
+      font-size: 30px;
+      line-height: 1.5;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+      //color: var(--black-color);
+    }
+
+    .price {
+      position: relative;
+      display: block;
+      margin: 4px 0 0;
+      font-family: Cormorant, serif;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+      color: var(--black-color);
+
+      .product-price__old {
+        padding: 0;
+        margin-right: 8px;
+      }
+
+      .del {
+        text-decoration: line-through;
+        color: var(--grey-color) !important;
+      }
+
+    }
+
+    .product-content__rating {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      vertical-align: middle;
+      line-height: 1.5;
+      margin: 13px 0 3px;
+      .star-rating {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        //color: var(--grey-color);
+
+      }
+      .product-content__rating-description {
+        position: relative;
+        top: 2px;
+        font-style: italic;
+        margin-left: 8px;
+        font-size: 1.7rem;
+        font-weight: 500;
+        line-height: 1.5;
+        color: var(--black-color);
+        font-family: Cormorant,serif;
+        text-decoration: none;
+        -webkit-transition: color 0.2s ease-out;
+        -o-transition: color 0.2s ease-out;
+        transition: color 0.2s ease-out;
+      }
+    }
+    .product-content__details-description {
+      position: relative;
+      display: block;
+      color: var(--grey-color);
+      /* white-space: break-spaces; */
+      top: -10px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 2;
+      margin-top: 15px;
+      /* display: -webkit-box; */
+      /* -webkit-box-orient: vertical; */
+      /* -webkit-line-clamp: 1; */
+    }
+    .product-content__quantity-vs-purchase {
+      display: flex;
+      .quantity-buttons {
+        display: flex;
+        flex-wrap: nowrap;
+        .quantity-buttons--minus, .quantity-buttons--plus {
+          cursor: pointer;
+          width: 52px;
+          height: 52px;
+          font-size: 18px;
+          font-weight: 300;
+          line-height: 48px;
+          text-align: center;
+          color: var(--text-color);
+          background-color: transparent;
+          border: 1px solid #d8d8d8;
+          transition: color ease-in-out 0.1s;
+          transition: background-color ease-in-out 0.1s;
+        }
+        .quantity-buttons--number {
+          /* cursor: pointer; */
+          width: 52px;
+          height: 52px;
+          font-size: 18px;
+          font-weight: 300;
+          line-height: 48px;
+          text-align: center;
+          color: var(--text-color);
+          background-color: transparent;
+          border: 1px solid #d8d8d8;
+          margin: 0 -1px 0;
+        }
+      }
+      .buttons {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: auto;
+        padding: 11px 29px;
+        font-size: 12px;
+        line-height: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        border-radius: 0;
+        outline: 0;
+        color: white;
+        background-color: black;
+        border: 1px solid black;
+        cursor: pointer;
+        z-index: 3;
+        min-width: 100px;
+      }
+      .purchase-buttons {
+        margin-left: 2%;
+      }
+    }
+  }
+
+}
+
+
