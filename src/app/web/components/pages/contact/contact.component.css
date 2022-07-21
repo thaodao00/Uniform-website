@@ -1,3 +1,203 @@
+/*Contact*/
+@media (max-width: 739px) {
+  .branch-item {
+    margin-bottom: 10px;
+  }
 
+  .branch-section {
+    margin: 25px 0;
+  }
+
+  .branch-item li h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  .branch-item li a {
+    font-size: 1.4rem;
+  }
+
+  .contact-ask .tagline {
+    font-size: 3.5rem;
+  }
+
+  .contact-ask .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .contact-ask .your-email {
+    margin-right: 10px;
+  }
+
+  .contact-ask-item {
+    text-align: center;
+  }
+
+  .contact-ask .contact-form {
+    display: grid;
+  }
+
+  .contact-slider {
+    margin-top: 56px;
+    height: 120px;
+  }
+
+  .contact-ask-wrapper {
+    padding: 25px 10px;
+  }
+
+  .contact-ask .title {
+    font-size: 1.6rem;
+  }
+
+  .back-to-top {
+    margin-bottom: 55px;
+  }
+}
+.contact-ask-item {
+  position: relative;
+  margin-top: 45px;
+  margin-left: 38px;
+  width: 70%;
+  height: 100%;
+}
+
+.contact-slider {
+  width: 100%;
+  height: 420px;
+  display: inline-block;
+  position: relative;
+  z-index: 101;
+}
+
+.contact-slider-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-slider__background {
+  position: relative;
+  display: block;
+  width: 100%;
+  /*min-width: 700px;*/
+  height: 100%;
+  margin: 1px 0;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-slider__title {
+  position: absolute;
+  top: 5%;
+  left: 11%;
+  display: block;
+  font-size: 50px;
+  color: var(--bs-dark);
+  line-height: 2.5;
+  font-weight: 600;
+}
+
+.branch-section {
+  overflow: auto;
+  margin: 60px 0;
+}
+
+.branch-item li {
+  list-style-type: none;
+  text-align: center;
+  font-family: "Cooper Black";
+  font-size: 17px;
+}
+.branch-item li h2 {
+  line-height: 2em;
+  font-size: 2rem;
+}
+.branch-item li a {
+  text-decoration: none;
+  color: #838383;
+  line-height: 1.8em;
+  font-size: 1.6rem;
+}
+.branch-item li a:hover {
+  color: black;
+}
+
+.contact-ask {
+  background: #fff9f8;
+}
+.contact-ask .tagline {
+  color: #e5e5e5;
+  font-size: 4rem;
+  line-height: 3rem;
+  margin-bottom: -25px;
+  font-family: Broadway;
+  font-style: italic;
+}
+.contact-ask .title {
+  font-size: 2.3rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+  font-family: Broadway;
+  font-style: italic;
+}
+.contact-ask .subtitle {
+  font-size: 1.6rem;
+  padding: 4px 0;
+  color: #5A5A5A;
+  font-weight: 100;
+  line-height: 25px;
+}
+.contact-ask .contact-form {
+  display: table-caption;
+}
+.contact-ask .your-email {
+  margin: 10px 0 21px;
+  width: 100%;
+  padding: 12px 15px;
+}
+.contact-ask .your-message {
+  padding: 12px 15px;
+  margin-bottom: 21px;
+  border-style: solid;
+}
+.contact-ask .submit-btn {
+  color: white;
+  background: black;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 1px;
+}
+.contact-ask .submit-btn:hover {
+  color: black;
+  background: white;
+  border: 1px solid var(--black-color);
+  cursor: pointer;
+}
+.contact-ask .contact-map-img {
+  background-size: cover;
+  width: 100%;
+  border-radius: 1px;
+  margin-top: 50px;
+}
+
+.contact-ask-wrapper {
+  padding: 60px 80px;
+}
+
+.contact-ask-inner {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-section-inner {
+  width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
 
 /*# sourceMappingURL=contact.component.css.map */
