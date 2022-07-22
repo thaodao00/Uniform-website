@@ -1,3 +1,272 @@
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+html {
+  height: 700px;
+}
 
+body {
+  height: 700px;
+}
+
+header {
+  height: 700px;
+}
+
+.jarallax {
+  height: 700px;
+}
+
+.mdb-lightbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.mdb-lightbox > figure {
+  margin: 10px !important;
+}
+
+.top-nav-collapse {
+  background-color: #3f51b5 !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+h5 {
+  letter-spacing: 3px;
+}
+
+.white-text {
+  color: white;
+}
+
+.font-weight-bold {
+  font-weight: 500;
+}
+
+.about-us__header-wrapper {
+  width: 100%;
+  margin-top: 5%;
+  background-color: #212529;
+}
+
+.about-us__header {
+  font-size: 42px;
+  color: white;
+  margin-left: 37%;
+  line-height: 2.5;
+  font-weight: 600;
+}
+
+.about-us__info-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us__info {
+  width: 100%;
+  padding: 55px 10%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.about-us__info:nth-child(2) > a {
+  order: 2;
+}
+.about-us__info:nth-child(2) .about-us__info-content {
+  order: 1;
+}
+
+.info--background-dark {
+  background-color: var(--black-color);
+}
+
+.about-us__info-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: flyOn ease-in 2s;
+}
+.about-us__info-img:hover {
+  transform: translate(1px, -1px);
+  opacity: 0.9;
+}
+
+.about-us__info-content {
+  width: 75%;
+  margin: 0 2.5%;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  animation: appear linear 2s;
+}
+.about-us__info-content blockquote {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.about-us__info-name {
+  width: 100%;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+}
+.about-us__info-name span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.about-us__info-date {
+  width: 100%;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+}
+.about-us__info-date span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.about-us__info-description {
+  width: 100%;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+}
+.about-us__info-description span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+@media (max-width: 740px) {
+  html {
+    height: 100vh;
+  }
+
+  body {
+    height: 100vh;
+  }
+
+  header {
+    height: 100vh;
+  }
+
+  .jarallax {
+    height: 100vh;
+  }
+
+  .about-us__header-wrapper {
+    margin-top: 56px;
+  }
+
+  .about-us__header {
+    font-size: 30px;
+    line-height: 1.8;
+    margin-left: 5%;
+  }
+
+  .about-us__info-wrapper {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .about-us__info {
+    padding: 42px 0;
+    flex-wrap: wrap;
+  }
+
+  .about-us__info-content {
+    width: 90%;
+    margin: 18px 0;
+  }
+}
+@media (min-width: 740px) and (max-width: 1024px) {
+  html {
+    height: 100vh;
+  }
+
+  body {
+    height: 100vh;
+  }
+
+  header {
+    height: 100vh;
+  }
+
+  .jarallax {
+    height: 100vh;
+  }
+
+  .about-us__header-wrapper {
+    margin-top: 10%;
+  }
+
+  .about-us__info-content {
+    width: 65%;
+    margin-left: 7.5%;
+  }
+
+  .about-us__info:nth-child(2) .about-us__info-content {
+    margin-left: 0;
+    margin-right: 7.5%;
+  }
+
+  .about-us__info-name {
+    font-size: 16px;
+  }
+  .about-us__info-name span {
+    font-size: 14px;
+  }
+
+  .about-us__info-date {
+    font-size: 16px;
+  }
+  .about-us__info-date span {
+    font-size: 14px;
+  }
+
+  .about-us__info-description {
+    font-size: 16px;
+  }
+  .about-us__info-description span {
+    font-size: 14px;
+  }
+}
+@media (min-width: 560px) and (max-width: 650px) {
+  header .jarallax h1 {
+    margin-bottom: 1.5rem !important;
+  }
+  header .jarallax h5 {
+    margin-bottom: 1.5rem !important;
+  }
+}
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #3f51b5 !important;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #3f51b5 !important;
+  }
+}
 
 /*# sourceMappingURL=about.component.css.map */
