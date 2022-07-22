@@ -195,4 +195,10 @@
   border-color: transparent currentColor transparent currentColor;
 }
 
+@media (max-width: 768px) {
+  .home-product-item__name, .home-product-item__price-old, .home-product-item__price-current {
+    font-size: 1.4rem;
+  }
+}
+
 /*# sourceMappingURL=product.component.css.map */

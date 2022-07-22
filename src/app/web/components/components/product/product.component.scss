@@ -3,9 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-
-
 .home-product-item {
   min-width: 125px;
   padding-bottom: 5px;
@@ -41,6 +38,7 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   margin: 10px 10px 6px;
+
 }
 
 .home-product-item__price {
@@ -196,4 +194,8 @@
   border-style: solid;
   border-color: transparent currentColor transparent currentColor;
 }
-
+@media (max-width: 768px) {
+  .home-product-item__name,.home-product-item__price-old, .home-product-item__price-current {
+    font-size: 1.4rem;
+  }
+}

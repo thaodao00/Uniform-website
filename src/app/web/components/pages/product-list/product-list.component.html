@@ -1,22 +1,60 @@
 <div class="container">
   <div class="row mt-5">
-    <div class="col-3">
-      <h4>CATEGORY</h4>
-      <ul class="list-group list-group-flush" >
-        <li class="list-group-item p-0 mt-3 pb-1 ">T-shirt Uniforms</li>
-        <li class="list-group-item p-0 mt-3 pb-1 ">Protective Uniforms</li>
-        <li class="list-group-item p-0 mt-3 pb-1 ">Hospital uniforms</li>
-        <li class="list-group-item p-0 mt-3 pb-1 ">Work Uniforms</li>
-        <li class="list-group-item p-0 mt-3 pb-1 ">Hotel uniforms</li>
-        <li class="list-group-item p-0 mt-3 pb-1 ">Work uniforms</li>
-      </ul>
+    <div class="col-lg-3 col-md-3 ">
+      <nav class="mobile-category">
+        <ul class="mobile-category__list">
+          <li class="mobile-category__item">
+            <a href="" class="mobile-category__link">T-shirt</a>
+          </li>
+          <li class="mobile-category__item">
+            <a href="" class="mobile-category__link">Student</a>
+          </li>
+          <li class="mobile-category__item">
+            <a href="" class="mobile-category__link">Primary</a>
+          </li>
+          <li class="mobile-category__item">
+            <a href="" class="mobile-category__link">Secondary</a>
+          </li>
+          <li class="mobile-category__item">
+          <a href="" class="mobile-category__link">High</a>
+          </li>
+          <li class="mobile-category__item">
+            <a href="" class="mobile-category__link">Vest</a>
+          </li>
+          <li class="mobile-category__item">
+            <a href="" class="mobile-category__link">Ao Dai</a>
+          </li>
+          <li class="mobile-category__item">
+            <a href="" class="mobile-category__link">Airline</a>
+          </li>
+          <li class="mobile-category__item">
+            <a href="" class="mobile-category__link">Bank</a>
+          </li>
+
+        </ul>
+      </nav>
+      <div class="col-0">
+        <h3 class="category-title">CATEGORY</h3>
+        <ul class="list-group list-group-flush" >
+          <li class="list-group-item p-0 mt-3 pb-1 ">T-shirt Uniforms</li>
+          <li class="list-group-item p-0 mt-3 pb-1 ">Student Uniforms</li>
+          <li class="list-group-item p-0 mt-3 pb-1 ">Primary Uniforms</li>
+          <li class="list-group-item p-0 mt-3 pb-1 ">Secondary Uniforms</li>
+          <li class="list-group-item p-0 mt-3 pb-1 ">High Uniforms</li>
+          <li class="list-group-item p-0 mt-3 pb-1 ">Vest uniforms</li>
+          <li class="list-group-item p-0 mt-3 pb-1 ">Ao Dai Uniforms</li>
+          <li class="list-group-item p-0 mt-3 pb-1 ">Airline Uniforms</li>
+          <li class="list-group-item p-0 mt-3 pb-1 ">Bank Uniforms</li>
+
+        </ul>
+      </div>
     </div>
-    <div class="col-9">
-      <div style="background: white; border: 1px solid">
+    <div class="col-lg-9 col-md-9 col-12">
+      <div class="mt-3 mb-3" style="background: white; border: 1px solid">
         <span class="m-4">Sort By</span>
-        <div class="btn-group" role="group" aria-label="Button group with nested dropdown" style="border-radius: 0">
-          <button type="button" class="btn btn-dark m-2 " style="border-radius: 0" >New</button>
-          <button type="button" class="btn btn-dark m-2">Common</button>
+        <div class="btn-group font-size-btn " role="group" aria-label="Button group with nested dropdown" style="border-radius: 0">
+          <button type="button" class="btn btn-black m-2 " style="border-radius: 0" >New</button>
+          <button type="button" class="btn btn-black m-2">Common</button>
 
           <div class="btn-group" role="group">
             <button id="btnGroupDrop1" type="button" class="btn btn-white dropdown-toggle m-2" style="border-radius: 0; border: 1px solid" data-bs-toggle="dropdown" aria-expanded="false">
@@ -30,8 +68,8 @@
         </div>
       </div>
       <div class="row mb-3">
-        <div class="col-3" *ngFor="let product of products; let i = index">
-          <a routerLink="/product-detail/{{product.id}}">
+        <div class="col-lg-3 col-md-4 col-6" *ngFor="let product of products; let i = index">
+          <a class="link-product" routerLink="/product-detail/{{product.id}}">
             <app-product [product]="product"></app-product>
           </a>
         </div>
