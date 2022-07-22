@@ -3,12 +3,12 @@
     <div class="col-3">
       <h4>CATEGORY</h4>
       <ul class="list-group list-group-flush" >
-        <li class="list-group-item p-0 mt-3 pb-1 ">Đồng Phục Áo Thun</li>
-        <li class="list-group-item p-0 mt-3 pb-1 ">Đồng Phục Bảo Vệ</li>
-        <li class="list-group-item p-0 mt-3 pb-1 ">Đồng Phục Bệnh Viện</li>
-        <li class="list-group-item p-0 mt-3 pb-1 ">Đồng Phục Công Sở</li>
-        <li class="list-group-item p-0 mt-3 pb-1 ">Đồng Phục Khách Sạn</li>
-        <li class="list-group-item p-0 mt-3 pb-1 ">Đồng Phục Bảo Hộ Lao Động</li>
+        <li class="list-group-item p-0 mt-3 pb-1 ">T-shirt Uniforms</li>
+        <li class="list-group-item p-0 mt-3 pb-1 ">Protective Uniforms</li>
+        <li class="list-group-item p-0 mt-3 pb-1 ">Hospital uniforms</li>
+        <li class="list-group-item p-0 mt-3 pb-1 ">Work Uniforms</li>
+        <li class="list-group-item p-0 mt-3 pb-1 ">Hotel uniforms</li>
+        <li class="list-group-item p-0 mt-3 pb-1 ">Work uniforms</li>
       </ul>
     </div>
     <div class="col-9">
@@ -30,9 +30,11 @@
         </div>
       </div>
       <div class="row mb-3">
-          <div class="col-3" *ngFor="let product of products; let i = index">
-          <app-product [product]="product"></app-product>
-          </div>
+        <div class="col-3" *ngFor="let product of products; let i = index">
+          <a routerLink="/product-detail/{{product.id}}">
+            <app-product [product]="product"></app-product>
+          </a>
+        </div>
       </div>
       <div class="d-flex justify-content-center m-4">
         <button type="button" class="btn btn-outline-dark d-flex" style="border-radius: 0">Load More</button>
