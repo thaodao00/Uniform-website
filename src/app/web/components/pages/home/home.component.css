@@ -1,3 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@media (max-width: 739px) {
+  html {
+    font-size: 62.5% !important;
+  }
 
+  .section__sub-title {
+    width: 75% !important;
+  }
+}
+@media (min-width: 740px) {
+  html {
+    font-size: 100% !important;
+  }
+}
+#home .home__section .section__header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+@keyframes textClip {
+  to {
+    background-position: 200% center;
+  }
+}
+#home .home__section .section__header .animate-character {
+  padding: 3rem 2rem 0;
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg, #1e1e1e 0%, #3c3c3c 20%, #fff 40%, #3c3c3c 60%, #1e1e1e 80%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textClip 2s linear infinite;
+  display: inline-block;
+}
+#home .home__section .section__header .section__title {
+  width: 100%;
+  font-size: 2.2rem;
+  font-weight: 600;
+  font-family: "Kaushan Script", monospace;
+}
+#home .home__section .section__header .section__sub-title {
+  width: 50%;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4;
+  font-style: italic;
+}
+#home .home__section .section__body .collection {
+  text-align: center;
+  padding-top: 3rem;
+  text-decoration: none;
+  font-family: "Kaushan Script", monospace;
+}
+#home .home__section .section__body .collection.collection--2 ~ .collection--2 {
+  padding-top: 1.5rem;
+}
+#home .home__section .section__body .collection.collection--2 .collection-item {
+  margin: 0 0.25rem;
+}
+#home .home__section .section__body .collection .collection-item {
+  width: 100%;
+  padding-top: 30%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+#home .home__section .section__body .collection .collection-item:hover {
+  transform: scale(1.05);
+  -webkit-filter: brightness(80%);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#home .home__section .section__body .collection .collection-item .collection-item__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  color: #fff;
+  border: 1px solid currentColor;
+  text-transform: uppercase;
+}
+#home .inbox {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 4rem;
+  height: 4rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  border: 2px solid #212529;
+  animation: appearLoop 2s linear infinite;
+  cursor: pointer;
+}
+@keyframes appearLoop {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
 /*# sourceMappingURL=home.component.css.map */

@@ -1,9 +1,89 @@
 <app-banner></app-banner>
-<div class="container">
-    <owl-carousel-o [options]="customOptions">
-        <ng-template carouselSlide *ngFor="let product of products; let i = index">
-            <app-product [product]="product"></app-product>
-        </ng-template>
-    </owl-carousel-o>
-</div>
 
+<div id="home">
+    <div class="inbox" style="background-image:url(assets/logo/mail.jpg)"></div>
+
+    <div class="home__section">
+        <div class="section__header">
+            <span class="section__title animate-character">Select your type</span>
+            <div class="section__sub-title">
+                Need to find a good uniform? Our store is confident to provide you with high quality products and the
+                best customer services
+            </div>
+        </div>
+        <div class="section__body container">
+            <div class="collection row">
+                <a href="/product-list" class="collection-item col"
+                   style="background-image: url(assets/collection/student-uniform.jpg)">
+                    <span class="collection-item__title">Student</span>
+                </a>
+                <a href="/product-list" class="collection-item col"
+                   style="background-image: url(assets/collection/t-shirt.jpg)">
+                    <span class="collection-item__title">T-shirt</span>
+                </a>
+                <a href="/product-list" class="collection-item col"
+                   style="background-image: url(assets/collection/vest.jpg)">
+                    <span class="collection-item__title">Vest</span>
+                </a>
+                <a href="/product-list" class="collection-item col"
+                   style="background-image: url(assets/collection/work-uniform.jpg)">
+                    <span class="collection-item__title">Work</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="home__section">
+        <div class="section__header">
+        </div>
+        <div class="section__body container">
+            <div class="collection collection--2 row">
+                <a href="/product-list" class="collection-item col"
+                   style="background-image: url(assets/collection/group-kid.jpg)">
+                    <span class="collection-item__title">Primary</span>
+                </a>
+                <a href="/product-list" class="collection-item col"
+                   style="background-image: url(assets/collection/group-secondary.jpg)">
+                    <span class="collection-item__title">Secondary</span>
+                </a>
+            </div>
+            <div class="collection collection--2 row">
+                <a href="/product-list" class="collection-item col"
+                   style="background-image: url(assets/collection/group-japanese.jpg)">
+                    <span class="collection-item__title">High</span>
+                </a>
+                <a href="/product-list" class="collection-item col"
+                   style="background-image: url(assets/collection/group-officer.jpg)">
+                    <span class="collection-item__title">Office</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="home__section">
+        <div class="section__header">
+            <span class="section__title animate-character">best seller</span>
+        </div>
+        <div class="section__body container">
+            <owl-carousel-o [options]="customOptions">
+                <ng-template carouselSlide *ngFor="let product of products; let i = index">
+                    <app-product [product]="product"></app-product>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+
+    <div class="home__section">
+        <div class="section__header">
+            <span class="section__title animate-character">new</span>
+        </div>
+        <div class="section__body container">
+            <owl-carousel-o [options]="customOptions">
+                <ng-template carouselSlide *ngFor="let product of products; let i = index">
+                    <app-product [product]="product"></app-product>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+
+</div>

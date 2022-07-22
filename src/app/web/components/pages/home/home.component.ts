@@ -17,9 +17,9 @@ export class HomeComponent implements OnInit {
         mouseDrag: true,
         touchDrag: true,
         pullDrag: true,
-        dots: true,
+        dots: false,
         navSpeed: 700,
-        navText: ['Before', 'After'],
+        // navText: ['', ''],
         responsive: {
             0: {
                 items: 1
@@ -34,7 +34,7 @@ export class HomeComponent implements OnInit {
                 items: 5
             }
         },
-        nav: true
+        nav: false
     }
 
     constructor(private productServices: ProductService) {
@@ -43,7 +43,6 @@ export class HomeComponent implements OnInit {
     ngOnInit(): void {
         this.productServices.getList().subscribe(data => {
             this.products = data;
-            console.log(this.products)
         })
     }
 }
