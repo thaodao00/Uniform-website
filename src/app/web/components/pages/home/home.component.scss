@@ -19,6 +19,8 @@
 
 #home {
   .home__section {
+    width: 100%;
+    overflow: hidden;
 
     .section__header {
       display: flex;
@@ -95,10 +97,11 @@
           background-repeat: no-repeat;
           background-position: center;
           position: relative;
+          overflow: hidden;
 
           &:hover {
-            transform: scale(1.05);
-            -webkit-filter: brightness(80%);
+            transform: scale(1.025);
+            -webkit-filter: brightness(75%);
             -webkit-transition: all 0.5s ease;
             -moz-transition: all 0.5s ease;
             -o-transition: all 0.5s ease;
@@ -112,23 +115,61 @@
             left: 50%;
             transform: translate(-50%, -50%);
             padding: 0.4rem 1rem;
-            font-size: 1rem;
+            font-size: 1.2rem;
             color: #fff;
+            background-color: rgb(0, 0, 0, 20%);
             border: 1px solid currentColor;
             text-transform: uppercase;
           }
         }
       }
     }
+  }
 
-    //&:nth-child(even) {
-    //  background-color: #212529;
-    //}
-    //
-    //&:nth-child(odd) {
-    //  background-color: #fff;
-    //}
+  .section__footer {
+    margin: 2rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    text-transform: uppercase;
 
+    .section__footer__left {
+      width: 50%;
+      text-align: right;
+      color: #1e1e1e;
+      text-decoration: none;
+      transition: all ease-in .25s;
+
+      &:hover {
+        letter-spacing: 0.05rem;
+      }
+
+      span {
+        padding: 0.2rem 0.6rem;
+        margin-right: 1rem;
+      }
+    }
+
+    .section__footer__right {
+      width: 50%;
+      text-align: left;
+      color: #6c757d;
+      text-decoration: none;
+      transition: all ease-in .25s;
+
+      &:hover {
+        letter-spacing: 0.05rem;
+      }
+
+      span {
+        padding: 0.2rem 0.6rem;
+        margin-left: 1rem;
+        border: 1px solid currentColor;
+        border-radius: 16px;
+      }
+    }
   }
 
   .inbox {
@@ -144,6 +185,7 @@
     border: 2px solid #212529;
     animation: appearLoop 2s linear infinite;
     cursor: pointer;
+    z-index: 10;
   }
 
   @keyframes appearLoop {
