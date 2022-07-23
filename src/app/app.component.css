@@ -10,10 +10,12 @@ a {
 .navbar-home {
   padding: 2px;
 }
+.navbar-home .nav-i {
+  padding-right: 10px;
+}
 
 .navbar__right {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
 }
 .navbar__right .navbar__cart-icon {
@@ -235,17 +237,18 @@ a {
     max-height: 40px;
   }
 }
-@media (max-width: 739px) {
+@media (max-width: 768px) {
   .navbar-home {
     padding: 4px;
   }
 
-  .navbar__logo {
-    transform: translateX(-10px);
+  .br-item {
+    background: #212529;
+    border: none;
   }
 
-  .navbar__right {
-    display: none;
+  .navbar__logo {
+    transform: translateX(-10px);
   }
 
   .navbar__avatar-text {
