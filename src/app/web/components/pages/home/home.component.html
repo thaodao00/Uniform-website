@@ -4,21 +4,21 @@
     <div class="inbox" style="background-image:url(assets/logo/mail.jpg)"></div>
 
     <div class="home__section">
-        <div class="section__header">
+        <header class="section__header">
             <span class="section__title animate-character">Select your type</span>
             <div class="section__sub-title">
                 Need to find a good uniform? Our store is confident to provide you with high quality products and the
                 best customer services
             </div>
-        </div>
-        <div class="section__body container">
+        </header>
+        <div class="section__body">
             <div class="collection row">
                 <a href="/product-list" class="collection-item col"
                    style="background-image: url(assets/collection/student-uniform.jpg)">
                     <span class="collection-item__title">Student</span>
                 </a>
                 <a href="/product-list" class="collection-item col"
-                   style="background-image: url(assets/collection/t-shirt.jpg)">
+                   style="background-image: url(assets/collection/t-shirt2.jpg)">
                     <span class="collection-item__title">T-shirt</span>
                 </a>
                 <a href="/product-list" class="collection-item col"
@@ -31,12 +31,25 @@
                 </a>
             </div>
         </div>
+        <footer class="section__footer">
+            <a routerLink="/" class="section__footer__left">
+                <span>buy online & pick up in store</span>
+            </a>
+            <a routerLink="/" class="section__footer__right">
+                <span>select and checkout</span>
+            </a>
+        </footer>
     </div>
 
     <div class="home__section">
-        <div class="section__header">
-        </div>
-        <div class="section__body container">
+        <header class="section__header">
+            <span class="section__title animate-character">uniforms for each age</span>
+            <div class="section__sub-title">
+                In addition to the newborn period, any stage in a person's life has an outfit for a certain age. Our
+                store confidently offers you a wide range of clothes of any age, gender or any country
+            </div>
+        </header>
+        <div class="section__body">
             <div class="collection collection--2 row">
                 <a href="/product-list" class="collection-item col"
                    style="background-image: url(assets/collection/group-kid.jpg)">
@@ -58,32 +71,53 @@
                 </a>
             </div>
         </div>
+        <footer class="section__footer">
+            <a routerLink="/" class="section__footer__left">
+                <span>shop new collection 2 - 3x weekly</span>
+            </a>
+            <a routerLink="/" class="section__footer__right">
+                <span>shop our lasted release</span>
+            </a>
+        </footer>
     </div>
 
     <div class="home__section">
-        <div class="section__header">
-            <span class="section__title animate-character">best seller</span>
+        <header class="section__header">
+            <span class="section__title animate-character">traditional uniforms</span>
+            <div class="section__sub-title">
+                Traditional costumes are often used on important occasions, in addition to showing solemnity,
+                traditional costumes also help the country's culture become widely popular and known in your country
+            </div>
+        </header>
+        <div class="section__body">
+            <div class="collection collection--2 row">
+                <a href="/product-list" class="collection-item col"
+                   style="background-image: url(assets/collection/ao-dai.jpg)">
+                    <span class="collection-item__title">Ao dai</span>
+                </a>
+                <a href="/product-list" class="collection-item col"
+                   style="background-image: url(assets/collection/kimono.jpg)">
+                    <span class="collection-item__title">Kimono</span>
+                </a>
+            </div>
+            <div class="collection collection--2 row">
+                <a href="/product-list" class="collection-item col"
+                   style="background-image: url(assets/collection/sinh.jpg)">
+                    <span class="collection-item__title">sinh</span>
+                </a>
+                <a href="/product-list" class="collection-item col"
+                   style="background-image: url(assets/collection/hanbok.jpg)">
+                    <span class="collection-item__title">hanbok</span>
+                </a>
+            </div>
         </div>
-        <div class="section__body container">
-            <owl-carousel-o [options]="customOptions">
-                <ng-template carouselSlide *ngFor="let product of products; let i = index">
-                    <app-product [product]="product"></app-product>
-                </ng-template>
-            </owl-carousel-o>
-        </div>
+        <footer class="section__footer">
+            <a routerLink="/" class="section__footer__left">
+                <span>Traditional uniforms</span>
+            </a>
+            <a routerLink="/" class="section__footer__right">
+                <span>Accessories & more+</span>
+            </a>
+        </footer>
     </div>
-
-    <div class="home__section">
-        <div class="section__header">
-            <span class="section__title animate-character">new</span>
-        </div>
-        <div class="section__body container">
-            <owl-carousel-o [options]="customOptions">
-                <ng-template carouselSlide *ngFor="let product of products; let i = index">
-                    <app-product [product]="product"></app-product>
-                </ng-template>
-            </owl-carousel-o>
-        </div>
-    </div>
-
 </div>

@@ -13,6 +13,10 @@
     font-size: 100% !important;
   }
 }
+#home .home__section {
+  width: 100%;
+  overflow: hidden;
+}
 #home .home__section .section__header {
   display: flex;
   justify-content: center;
@@ -70,10 +74,11 @@
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+  overflow: hidden;
 }
 #home .home__section .section__body .collection .collection-item:hover {
-  transform: scale(1.05);
-  -webkit-filter: brightness(80%);
+  transform: scale(1.025);
+  -webkit-filter: brightness(75%);
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -86,10 +91,50 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 0.4rem 1rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
   border: 1px solid currentColor;
   text-transform: uppercase;
+}
+#home .section__footer {
+  margin: 2rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+#home .section__footer .section__footer__left {
+  width: 50%;
+  text-align: right;
+  color: #1e1e1e;
+  text-decoration: none;
+  transition: all ease-in 0.25s;
+}
+#home .section__footer .section__footer__left:hover {
+  letter-spacing: 0.05rem;
+}
+#home .section__footer .section__footer__left span {
+  padding: 0.2rem 0.6rem;
+  margin-right: 1rem;
+}
+#home .section__footer .section__footer__right {
+  width: 50%;
+  text-align: left;
+  color: #6c757d;
+  text-decoration: none;
+  transition: all ease-in 0.25s;
+}
+#home .section__footer .section__footer__right:hover {
+  letter-spacing: 0.05rem;
+}
+#home .section__footer .section__footer__right span {
+  padding: 0.2rem 0.6rem;
+  margin-left: 1rem;
+  border: 1px solid currentColor;
+  border-radius: 16px;
 }
 #home .inbox {
   position: fixed;
@@ -104,6 +149,7 @@
   border: 2px solid #212529;
   animation: appearLoop 2s linear infinite;
   cursor: pointer;
+  z-index: 10;
 }
 @keyframes appearLoop {
   0% {
