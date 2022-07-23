@@ -13,11 +13,13 @@ a {
 
 .navbar-home {
   padding: 2px;
+  .nav-i{
+    padding-right: 10px;
+  }
 }
 
 .navbar__right {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
 
   .navbar__cart-icon {
@@ -255,38 +257,33 @@ a {
   background-color: transparent;
   color: #fff;
 }
-
 @media (min-width: 1024px) {
   .navbar__logo {
     max-height: 50px;
   }
-
   #mynavbar ul li ~ li {
     margin-left: 1rem;
   }
 }
-
 
 @media (max-width: 1024px) {
   .navbar__logo {
     max-height: 40px;
   }
 }
-
-@media (max-width: 739px) {
+@media (max-width: 768px) {
   .navbar-home {
     padding: 4px;
   }
-
+  .br-item{
+    background: #212529;
+    border: none;
+  }
   .navbar__logo {
     transform: translateX(-10px);
   }
-
-  .navbar__right {
-    display: none;
-  }
-
   .navbar__avatar-text {
     display: block;
   }
 }
+
