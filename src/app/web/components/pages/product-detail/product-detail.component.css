@@ -72,27 +72,49 @@
   padding: 0;
 }
 .product-content__tabs-list .product-content__tabs-item {
-  padding: 20px;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 500;
   font-style: italic;
   /* font-family: Cormorant, sans-serif; */
-  border: 1px solid black;
   display: flex;
   align-items: center;
+  color: black;
 }
 .product-content__tabs-list .tabs-active {
   display: flex !important;
 }
 .product-content__tabs-list .product-content__tabs-item.tabs-active {
-  border: 1px solid gray;
+  border: 1px solid black;
+}
+
+.tabs-content__info-weight, .tabs-content__info-dimensions {
+  font-size: 14px;
+  color: var(--black-color);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  width: 100%;
+  line-height: 1.5;
+}
+.tabs-content__info-weight span, .tabs-content__info-dimensions span {
+  color: var(--grey-color);
+  font-size: 14px;
+  text-transform: none;
+  margin-left: 20px;
+}
+
+.form-size {
+  padding: 0 5px;
+  margin-left: 20px;
+  border-radius: 2px;
+  width: 100px;
+  font-size: 1.2rem;
+}
+.form-size option {
+  padding: 0;
 }
 
 .product-content__tabs-content {
   margin: 30px 0;
-}
-.product-content__tabs-content .tabs-content__item {
-  display: none;
 }
 .product-content__tabs-content .tabs-content__description {
   font-weight: 400;
@@ -107,6 +129,136 @@
 }
 .product-content__tabs-content .tabs-active {
   display: flex !important;
+}
+
+.tabs-content__review {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tabs-content__review .product-review__wrapper {
+  width: 100%;
+  padding: 32px 16px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  border-radius: 2px;
+  border: 1px solid var(--border-color);
+}
+.tabs-content__review .product-review__wrapper .product-review__title {
+  width: 100%;
+  font-size: 28px;
+  color: var(--text-color);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  line-height: 1.4;
+}
+.tabs-content__review .product-review__wrapper .product-review__header {
+  width: 100%;
+}
+.tabs-content__review .product-review__wrapper .product-review__rating-wrapper {
+  width: 100%;
+  padding: 24px;
+  margin: 16px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-color);
+  background-color: #faf9f9;
+  line-height: 1.2;
+}
+.tabs-content__review .product-review__wrapper .product-review__rating-wrapper .product-review__average-rating {
+  font-size: 28px;
+}
+.tabs-content__review .product-review__wrapper .product-review__rating-wrapper .product-review__rating .product-review__rating i {
+  color: var(--black-color);
+}
+.tabs-content__review .product-review__wrapper .product-review__rating-wrapper .product-review__rating .star-rating {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: grey;
+}
+.tabs-content__review .product-review__wrapper .product-review__body {
+  width: 100%;
+  padding: 16px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tabs-content__review .product-review__wrapper .product-comment__wrapper {
+  width: 100%;
+  padding: 16px 0;
+  display: flex;
+  flex-wrap: nowrap;
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+}
+.tabs-content__review .product-review__wrapper .product-comment__wrapper .product-comment__user-img {
+  margin: 0 16px;
+}
+.tabs-content__review .product-review__wrapper .product-comment__wrapper .product-comment__user-img img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.tabs-content__review .product-review__wrapper .product-comment__wrapper .product-comment__body .product-comment__user-name {
+  font-size: 13px;
+}
+.tabs-content__review .product-review__wrapper .product-comment__wrapper .product-comment__body .product-content__user-rating {
+  font-size: 8px;
+  margin: 0;
+}
+.tabs-content__review .product-review__wrapper .product-comment__wrapper .product-comment__body .product-content__user-rating .star-rating {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: var(--grey-color);
+}
+.tabs-content__review .product-review__wrapper .product-comment__wrapper .product-comment__body .product-comment__content-wrapper {
+  width: 100%;
+  margin: 8px 0;
+  font-size: 14px;
+  color: var(--text-color);
+  font-family: "Tangerine", cursive;
+  font-weight: 500;
+}
+.tabs-content__review .product-review__wrapper .product-comment__wrapper .product-comment__body .product-comment__content-wrapper .product-comment__content {
+  line-height: 0.9;
+}
+.tabs-content__review .product-review__wrapper .product-comment__wrapper .product-comment__body .product-comment__created-time-wrapper {
+  width: 100%;
+  font-size: 10px;
+  color: var(--text-color);
+}
+.tabs-content__review .product-review__wrapper .review-load-comment__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+.tabs-content__review #your-review-text {
+  min-height: 300px;
+}
+.tabs-content__review input, .tabs-content__review textarea {
+  width: 80%;
+  margin-top: 20px;
+  line-height: 2;
+  font-style: italic;
+  font-size: 14px;
+  color: grey;
+  padding: 10px 20px;
+  border-radius: 2px;
+  border: 1px solid grey;
+  outline: none;
+  font-weight: 300;
+  font-family: "Tangerine", cursive;
+  text-align: left;
+}
+.tabs-content__review .review-commit__wrapper {
+  width: 80%;
+  margin-top: 20px;
+}
+.tabs-content__review .review-commit__wrapper .button {
+  display: block;
 }
 
 .related-products__title {
@@ -232,7 +384,11 @@
   border: 1px solid #d8d8d8;
   margin: 0 -1px 0;
 }
-.product-content__text-wrapper .product-content__text .product-content__quantity-vs-purchase .buttons {
+.product-content__text-wrapper .product-content__text .product-content__quantity-vs-purchase .purchase-buttons {
+  margin-left: 2%;
+}
+
+.buttons {
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -247,13 +403,13 @@
   outline: 0;
   color: white;
   background-color: black;
-  border: 1px solid black;
   cursor: pointer;
   z-index: 3;
   min-width: 100px;
 }
-.product-content__text-wrapper .product-content__text .product-content__quantity-vs-purchase .purchase-buttons {
-  margin-left: 2%;
+
+.style-none {
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=product-detail.component.css.map */
