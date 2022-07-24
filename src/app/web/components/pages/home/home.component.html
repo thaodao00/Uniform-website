@@ -120,4 +120,22 @@
             </a>
         </footer>
     </div>
+
+    <div class="home__section">
+        <header class="section__header">
+            <span class="section__title animate-character">Our Best Seller</span>
+            <div class="section__sub-title">
+                What are you waiting for? Let's start shopping...
+            </div>
+        </header>
+        <div class="section__body">
+            <owl-carousel-o [options]="customOptions">
+                <ng-template carouselSlide *ngFor="let product of products">
+                    <app-product [product]="product"></app-product>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+        <footer class="section__footer">
+        </footer>
+    </div>
 </div>

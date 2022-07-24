@@ -42,56 +42,65 @@
     {
       "id": 1,
       "thumbnail": "https://webdongphuc.vn/wp-content/uploads/2021/04/Artboard-7.jpg",
-      "title": "Áo đồng phục nữ sinh Nhật Bản",
-      "price": 50000
+      "name": "Áo đồng phục nữ sinh Nhật Bản",
+      "price": 50000,
+      "oldPrice": 100000
     },
     {
       "id": 2,
       "thumbnail": "https://webdongphuc.vn/wp-content/uploads/2021/04/Artboard-7.jpg",
-      "title": "Áo đồng phục nữ sinh Nhật Bản",
-      "price": 50000
+      "name": "Áo đồng phục nữ sinh Nhật Bản",
+      "price": 50000,
+      "oldPrice": 100000
     },
     {
       "id": 3,
       "thumbnail": "https://cf.shopee.vn/file/a706354fc07a01f12d3d5dbc4af8a033",
-      "title": "Áo đồng phục nữ sinh Nhật Bản",
-      "price": 50000
+      "name": "Áo đồng phục nữ sinh Nhật Bản",
+      "price": 50000,
+      "oldPrice": 100000
     },
     {
       "id": 4,
       "thumbnail": "https://cf.shopee.vn/file/a706354fc07a01f12d3d5dbc4af8a033",
-      "title": "Áo đồng phục nữ sinh Nhật Bản",
-      "price": 50000
+      "name": "Áo đồng phục nữ sinh Nhật Bản",
+      "price": 50000,
+      "oldPrice": 100000
     },
     {
       "id": 5,
       "thumbnail": "https://cf.shopee.vn/file/a706354fc07a01f12d3d5dbc4af8a033",
-      "title": "Áo đồng phục nữ sinh Nhật Bản",
-      "price": 50000
+      "name": "Áo đồng phục nữ sinh Nhật Bản",
+      "price": 50000,
+      "oldPrice": 100000
     },
     {
       "id": 6,
       "thumbnail": "https://cf.shopee.vn/file/a706354fc07a01f12d3d5dbc4af8a033",
-      "title": "Áo đồng phục nữ sinh Nhật Bản",
-      "price": 50000
+      "name": "Áo đồng phục nữ sinh Nhật Bản",
+      "price": 50000,
+      "oldPrice": 100000
     },
     {
       "id": 7,
       "thumbnail": "https://cf.shopee.vn/file/a706354fc07a01f12d3d5dbc4af8a033",
-      "title": "Áo đồng phục nữ sinh Nhật Bản",
-      "price": 50000
+      "name": "Áo đồng phục nữ sinh Nhật Bản",
+      "price": 50000,
+      "oldPrice": 100000
     },
     {
       "id": 8,
       "thumbnail": "https://cf.shopee.vn/file/a706354fc07a01f12d3d5dbc4af8a033",
-      "title": "Áo đồng phục nữ sinh Nhật Bản",
-      "price": 50000
+      "name": "Áo đồng phục nữ sinh Nhật Bản",
+      "price": 50000,
+      "oldPrice": 100000
     },
     {
       "id": 9,
       "thumbnail": "https://cf.shopee.vn/file/a706354fc07a01f12d3d5dbc4af8a033",
-      "title": "Áo đồng phục nữ sinh Nhật Bản",
-      "price": 50000
+      "name": "Áo đồng phục nữ sinh Nhật Bản",
+      "price": 50000,
+      "oldPrice": 100000
     }
   ],
   "banner": [
