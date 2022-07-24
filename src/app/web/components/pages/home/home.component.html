@@ -131,7 +131,9 @@
         <div class="section__body">
             <owl-carousel-o [options]="customOptions">
                 <ng-template carouselSlide *ngFor="let product of products">
+                  <a class="link-product" routerLink="/">
                     <app-product [product]="product"></app-product>
+                  </a>
                 </ng-template>
             </owl-carousel-o>
         </div>
