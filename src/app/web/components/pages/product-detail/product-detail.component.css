@@ -412,4 +412,40 @@
   list-style-type: none;
 }
 
+.size-product {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5% !important;
+  }
+
+  .product-content__text-wrapper {
+    margin-top: 20px;
+  }
+
+  #nav-contact input, #nav-contact textarea {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 100% !important;
+  }
+}
+@media (max-width: 992px) {
+  .product-content__rating-description {
+    font-size: 1.2rem !important;
+  }
+
+  #nav-contact input, #nav-contact textarea {
+    width: 100%;
+  }
+
+  .product-content__quantity-vs-purchase .buttons {
+    padding: 10px;
+  }
+}
+
 /*# sourceMappingURL=product-detail.component.css.map */
